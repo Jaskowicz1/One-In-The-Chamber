@@ -54,9 +54,6 @@ public class PlayerConnections implements Listener {
                     ResultSet result = statement.executeQuery("SELECT * FROM `STATS` WHERE `playerUUID`='" + pl.getUniqueId().toString() + "';");
 
                     if(result.next()) {
-
-                        //System.out.println("test");
-
                         u.setKills(result.getInt("Kills"));
                         u.setDeaths(result.getInt("Deaths"));
                         u.setWins(result.getInt("Wins"));

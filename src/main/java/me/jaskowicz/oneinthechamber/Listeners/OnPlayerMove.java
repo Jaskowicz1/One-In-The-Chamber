@@ -74,8 +74,6 @@ public class OnPlayerMove implements Listener {
                                 }
                             }
 
-                            //player.sendMessage(OneInTheChamber.prefix + ChatColor.WHITE + "You died!");
-
                             player.setHealth(20);
                             player.setFoodLevel(20);
                             player.setSaturation(20);
@@ -111,14 +109,6 @@ public class OnPlayerMove implements Listener {
                             BukkitTask bukkitTask = Bukkit.getScheduler().runTaskTimer(plugin, () -> {
                                 player.sendTitle("" + ChatColor.RED + ChatColor.BOLD + "You died!", ChatColor.YELLOW + "Respawning in " + user.getSecondsTilRespawn() + "...", 0, 40, 0);
                                 user.setSecondsTilRespawn(user.getSecondsTilRespawn() - 1);
-                                /*
-                                if (game.getUsersDead().get(randomUser.get().getPlayer().getUniqueId()) == null) {
-                                    player.setSpectatorTarget(randomUser.get().getPlayer());
-                                } else {
-                                    randomUser.set(RandomUtil.getRandomUser(game.getUsersAlive()));
-                                    player.setSpectatorTarget(randomUser.get().getPlayer());
-                                }
-                                */
                             }, 0, 20);
 
                             BukkitTask bukkitTask2 = Bukkit.getScheduler().runTaskLater(plugin, () -> {

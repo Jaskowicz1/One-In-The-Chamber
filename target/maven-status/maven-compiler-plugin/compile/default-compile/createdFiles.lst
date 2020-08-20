@@ -9,6 +9,7 @@ me\jaskowicz\oneinthechamber\Listeners\BlockListeners.class
 me\jaskowicz\oneinthechamber\Listeners\OnInventoryClick.class
 me\jaskowicz\oneinthechamber\Listeners\OnPlayerInteract.class
 me\jaskowicz\oneinthechamber\Listeners\PlayerConnections.class
+me\jaskowicz\oneinthechamber\Inventories\CosmeticInventory.class
 me\jaskowicz\oneinthechamber\Listeners\OnBowShoot.class
 me\jaskowicz\oneinthechamber\Listeners\OnEntityDamage.class
 me\jaskowicz\oneinthechamber\UtilsExtra\RandomUtil.class

@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7feb3ae4-3fff-4445-832d-4089b34a8592" name="Default Changelist" comment="" />
+    <list default="true" id="7feb3ae4-3fff-4445-832d-4089b34a8592" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Inventories/CosmeticInventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Listeners/OnBowShoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Listeners/OnBowShoot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Listeners/OnInventoryClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Listeners/OnInventoryClick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Listeners/OnPlayerInteract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Listeners/OnPlayerInteract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Listeners/OnPlayerMove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Listeners/OnPlayerMove.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Listeners/PlayerConnections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Listeners/PlayerConnections.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Tasks/ArrowTrailTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Tasks/ArrowTrailTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Utils/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Utils/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/oneinthechamber-1.0-SNAPSHOT-shaded.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/oneinthechamber-1.0-SNAPSHOT-shaded.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/oneinthechamber-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/oneinthechamber-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/original-oneinthechamber-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-oneinthechamber-1.0-SNAPSHOT.jar" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +29,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -27,15 +44,16 @@
   <component name="ProjectId" id="1UJYBzycnoghzP8DNWmtHjdN7T9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BUDe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../LobbyPlugin" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="me.jaskowicz.oneinthechamber.UtilsExtra" />
       <recent name="me.jaskowicz.oneinthechamber.Inventories" />
+      <recent name="me.jaskowicz.oneinthechamber.UtilsExtra" />
       <recent name="me.jaskowicz.oneinthechamber.Tasks" />
       <recent name="me.jaskowicz.oneinthechamber.Settings" />
     </key>
@@ -95,5 +113,21 @@
       <updated>1575076033020</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/One-In-The-Chamber" />
+    </ignored-roots>
   </component>
 </project>

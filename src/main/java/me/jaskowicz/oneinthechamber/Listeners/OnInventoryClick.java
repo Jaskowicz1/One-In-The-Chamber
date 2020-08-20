@@ -2,6 +2,8 @@ package me.jaskowicz.oneinthechamber.Listeners;
 
 import me.jaskowicz.oneinthechamber.OneInTheChamber;
 import me.jaskowicz.oneinthechamber.Utils.User;
+import org.bukkit.ChatColor;
+import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -33,6 +35,174 @@ public class OnInventoryClick implements Listener {
         if(user.getGameIn() != null) {
             if(invname.contains("Your Statistics")) {
                 event.setCancelled(true);
+            } else if (invname.contains("Particles")) {
+                event.setCancelled(true);
+                if (clicked.getItemMeta().getDisplayName().contains("Fire Trail")) {
+                    if (player.hasPermission("oneinthechamber.firetrail")) {
+                        if (!user.hasTrailOn() && !user.hasFireTrailOn() || user.hasTrailOn() && user.hasFireTrailOn()) {
+                            player.playSound(player.getLocation(), Sound.ENTITY_CHICKEN_EGG, 5.0F, 1F);
+                            if (!user.hasFireTrailOn()) {
+                                user.setHasFireTrailOn(true);
+                                user.setHasTrailOn(true);
+                                player.sendMessage(OneInTheChamber.prefix + ChatColor.GRAY + "Fire trail: " + ChatColor.GREEN + "Enabled");
+                            } else {
+                                user.setHasFireTrailOn(false);
+                                user.setHasTrailOn(false);
+                                player.sendMessage(OneInTheChamber.prefix + ChatColor.GRAY + "Fire trail: " + ChatColor.RED + "Disabled");
+                            }
+                        } else {
+                            player.sendMessage(OneInTheChamber.prefix + ChatColor.RED + "You already have a trail on!");
+                        }
+                    } else {
+                        player.playSound(player.getLocation(), Sound.ENTITY_VILLAGER_HURT, 5.0F, 0.4F);
+                        player.sendMessage(OneInTheChamber.prefix + ChatColor.RED + "You lack the permission to use this particle.");
+                    }
+                } else if (clicked.getItemMeta().getDisplayName().contains("Water Trail")) {
+                    if (player.hasPermission("oneinthechamber.watertrail")) {
+                        if (!user.hasTrailOn() && !user.hasWaterTrailOn() || user.hasTrailOn() && user.hasWaterTrailOn()) {
+                            player.playSound(player.getLocation(), Sound.ENTITY_CHICKEN_EGG, 5.0F, 1F);
+                            if (!user.hasWaterTrailOn()) {
+                                user.setHasWaterTrailOn(true);
+                                user.setHasTrailOn(true);
+                                player.sendMessage(OneInTheChamber.prefix + ChatColor.GRAY + "Water trail: " + ChatColor.GREEN + "Enabled");
+                            } else {
+                                user.setHasWaterTrailOn(false);
+                                user.setHasTrailOn(false);
+                                player.sendMessage(OneInTheChamber.prefix + ChatColor.GRAY + "Water trail: " + ChatColor.RED + "Disabled");
+                            }
+                        } else {
+                            player.sendMessage(OneInTheChamber.prefix + ChatColor.RED + "You already have a trail on!");
+                        }
+                    } else {
+                        player.playSound(player.getLocation(), Sound.ENTITY_VILLAGER_HURT, 5.0F, 0.4F);
+                        player.sendMessage(OneInTheChamber.prefix + ChatColor.RED + "You lack the permission to use this particle.");
+                    }
+                } else if (clicked.getItemMeta().getDisplayName().contains("Lava Trail")) {
+                    if (player.hasPermission("oneinthechamber.lavatrail")) {
+                        if (!user.hasTrailOn() && !user.hasLavaTrailOn() || user.hasTrailOn() && user.hasLavaTrailOn()) {
+                            player.playSound(player.getLocation(), Sound.ENTITY_CHICKEN_EGG, 5.0F, 1F);
+                            if (!user.hasLavaTrailOn()) {
+                                user.setHasLavaTrailOn(true);
+                                user.setHasTrailOn(true);
+                                player.sendMessage(OneInTheChamber.prefix + ChatColor.GRAY + "Lava trail: " + ChatColor.GREEN + "Enabled");
+                            } else {
+                                user.setHasLavaTrailOn(false);
+                                user.setHasTrailOn(false);
+                                player.sendMessage(OneInTheChamber.prefix + ChatColor.GRAY + "Lava trail: " + ChatColor.RED + "Disabled");
+                            }
+                        } else {
+                            player.sendMessage(OneInTheChamber.prefix + ChatColor.RED + "You already have a trail on!");
+                        }
+                    } else {
+                        player.playSound(player.getLocation(), Sound.ENTITY_VILLAGER_HURT, 5.0F, 0.4F);
+                        player.sendMessage(OneInTheChamber.prefix + ChatColor.RED + "You lack the permission to use this particle.");
+                    }
+                } else if (clicked.getItemMeta().getDisplayName().contains("Note Trail")) {
+                    if (player.hasPermission("oneinthechamber.notetrail")) {
+                        if (!user.hasTrailOn() && !user.hasNoteTrailOn() || user.hasTrailOn() && user.hasNoteTrailOn()) {
+                            player.playSound(player.getLocation(), Sound.ENTITY_CHICKEN_EGG, 5.0F, 1F);
+                            if (!user.hasNoteTrailOn()) {
+                                user.setHasNoteTrailOn(true);
+                                user.setHasTrailOn(true);
+                                player.sendMessage(OneInTheChamber.prefix + ChatColor.GRAY + "Note trail: " + ChatColor.GREEN + "Enabled");
+                            } else {
+                                user.setHasNoteTrailOn(false);
+                                user.setHasTrailOn(false);
+                                player.sendMessage(OneInTheChamber.prefix + ChatColor.GRAY + "Note trail: " + ChatColor.RED + "Disabled");
+                            }
+                        } else {
+                            player.sendMessage(OneInTheChamber.prefix + ChatColor.RED + "You already have a trail on!");
+                        }
+                    } else {
+                        player.playSound(player.getLocation(), Sound.ENTITY_VILLAGER_HURT, 5.0F, 0.4F);
+                        player.sendMessage(OneInTheChamber.prefix + ChatColor.RED + "You lack the permission to use this particle.");
+                    }
+                } else if (clicked.getItemMeta().getDisplayName().contains("Heart Trail")) {
+                    if (player.hasPermission("oneinthechamber.hearttrail")) {
+                        if (!user.hasTrailOn() && !user.hasHeartTrailOn() || user.hasTrailOn() && user.hasHeartTrailOn()) {
+                            player.playSound(player.getLocation(), Sound.ENTITY_CHICKEN_EGG, 5.0F, 1F);
+                            if (!user.hasHeartTrailOn()) {
+                                user.setHasHeartTrailOn(true);
+                                user.setHasTrailOn(true);
+                                player.sendMessage(OneInTheChamber.prefix + ChatColor.GRAY + "Heart trail: " + ChatColor.GREEN + "Enabled");
+                            } else {
+                                user.setHasHeartTrailOn(false);
+                                user.setHasTrailOn(false);
+                                player.sendMessage(OneInTheChamber.prefix + ChatColor.GRAY + "Heart trail: " + ChatColor.RED + "Disabled");
+                            }
+                        } else {
+                            player.sendMessage(OneInTheChamber.prefix + ChatColor.RED + "You already have a trail on!");
+                        }
+                    } else {
+                        player.playSound(player.getLocation(), Sound.ENTITY_VILLAGER_HURT, 5.0F, 0.4F);
+                        player.sendMessage(OneInTheChamber.prefix + ChatColor.RED + "You lack the permission to use this particle.");
+                    }
+                } else if (clicked.getItemMeta().getDisplayName().contains("Snow Trail")) {
+                    if (player.hasPermission("oneinthechamber.snowtrail")) {
+                        if (!user.hasTrailOn() && !user.hasSnowTrailOn() || user.hasTrailOn() && user.hasSnowTrailOn()) {
+                            player.playSound(player.getLocation(), Sound.ENTITY_CHICKEN_EGG, 5.0F, 1F);
+                            if (!user.hasSnowTrailOn()) {
+                                user.setHasSnowTrailOn(true);
+                                user.setHasTrailOn(true);
+                                player.sendMessage(OneInTheChamber.prefix + ChatColor.GRAY + "Snow trail: " + ChatColor.GREEN + "Enabled");
+                            } else {
+                                user.setHasSnowTrailOn(false);
+                                user.setHasTrailOn(false);
+                                player.sendMessage(OneInTheChamber.prefix + ChatColor.GRAY + "Snow trail: " + ChatColor.RED + "Disabled");
+                            }
+                        } else {
+                            player.sendMessage(OneInTheChamber.prefix + ChatColor.RED + "You already have a trail on!");
+                        }
+                    } else {
+                        player.playSound(player.getLocation(), Sound.ENTITY_VILLAGER_HURT, 5.0F, 0.4F);
+                        player.sendMessage(OneInTheChamber.prefix + ChatColor.RED + "You lack the permission to use this particle.");
+                    }
+                } else if (clicked.getItemMeta().getDisplayName().contains("Emerald Trail")) {
+                    if (player.hasPermission("oneinthechamber.emeraldtrail")) {
+                        if (!user.hasTrailOn() && !user.hasEmeraldTrailOn() || user.hasTrailOn() && user.hasEmeraldTrailOn()) {
+                            player.playSound(player.getLocation(), Sound.ENTITY_CHICKEN_EGG, 5.0F, 1F);
+                            if (!user.hasEmeraldTrailOn()) {
+                                user.setHasEmeraldTrailOn(true);
+                                user.setHasTrailOn(true);
+                                player.sendMessage(OneInTheChamber.prefix + ChatColor.GRAY + "Emerald trail: " + ChatColor.GREEN + "Enabled");
+                            } else {
+                                user.setHasEmeraldTrailOn(false);
+                                user.setHasTrailOn(false);
+                                player.sendMessage(OneInTheChamber.prefix + ChatColor.GRAY + "Emerald trail: " + ChatColor.RED + "Disabled");
+                            }
+                        } else {
+                            player.sendMessage(OneInTheChamber.prefix + ChatColor.RED + "You already have a trail on!");
+                        }
+                    } else {
+                        player.playSound(player.getLocation(), Sound.ENTITY_VILLAGER_HURT, 5.0F, 0.4F);
+                        player.sendMessage(OneInTheChamber.prefix + ChatColor.RED + "You lack the permission to use this particle.");
+                    }
+                } else if (clicked.getItemMeta().getDisplayName().contains("Clear particles")) {
+                    event.setCancelled(true);
+                    if (user.hasTrailOn()) {
+                        user.setHasAngryTrailOn(false);
+                        user.setHasEmeraldTrailOn(false);
+                        user.setHasEnchantTrailOn(false);
+                        user.setHasFireTrailOn(false);
+                        user.setHasHeartTrailOn(false);
+                        user.setHasLavaTrailOn(false);
+                        user.setHasNoteTrailOn(false);
+                        user.setHasSnowTrailOn(false);
+                        user.setHasWaterTrailOn(false);
+                        user.setHasPurpleTrailOn(false);
+                        user.setHasTrailOn(false);
+                        player.sendMessage(OneInTheChamber.prefix + ChatColor.RED + "Your current particle effect has been cleared.");
+                        player.playSound(player.getLocation(), Sound.BLOCK_FIRE_EXTINGUISH, 5.0F, 0.4F);
+                    } else if (!user.hasTrailOn()) {
+                        player.sendMessage(OneInTheChamber.prefix + ChatColor.RED + "There are no particle effects to be cleared.");
+                    }
+                } else if (clicked.getItemMeta().getDisplayName().contains("Exit")) {
+                    event.setCancelled(true);
+                    player.closeInventory();
+                    player.playSound(player.getLocation(), Sound.BLOCK_ANVIL_LAND, 5.0F, 0.6F);
+                } else {
+                    event.setCancelled(true);
+                }
             } else {
                 if(!user.getGameIn().hasStarted() && !user.getGameIn().isFinished()) {
                     event.setCancelled(true);

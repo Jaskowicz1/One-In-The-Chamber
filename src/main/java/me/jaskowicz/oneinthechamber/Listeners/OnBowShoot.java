@@ -35,6 +35,7 @@ public class OnBowShoot implements Listener {
                     arrowTrailTask.runTaskTimer(plugin, 0, 2);
 
                     // Just to make sure arrows don't stay
+                    // 15 seconds counter.
                     Bukkit.getScheduler().runTaskLater(plugin, () -> {
                         event.getProjectile().remove();
                         event.setCancelled(true);

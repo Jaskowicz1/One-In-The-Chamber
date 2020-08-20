@@ -31,6 +31,19 @@ public class User {
     private int loses;
     private int draws;
 
+    private boolean fireTrailCosmeticOn = false;
+    private boolean lavaTrailCosmeticOn = false;
+    private boolean waterTrailCosmeticOn = false;
+    private boolean angryTrailCosmeticOn = false;
+    private boolean emeraldTrailCosmeticOn = false;
+    private boolean snowTrailCosmeticOn = false;
+    private boolean noteTrailCosmeticOn = false;
+    private boolean heartTrailCosmeticOn = false;
+    private boolean enchantTrailCosmeticOn = false;
+    private boolean purpleTrailCosmeticOn = false;
+    private boolean bloodTrailCosmeticOn = false;
+    private boolean trailOn = false;
+
     public HashMap<BukkitTask, User> hitTasks = new HashMap<>();
 
     public User(Player player) {
@@ -148,5 +161,103 @@ public class User {
 
     public void setLastHitBy(User lastHitBy) {
         this.lastHitBy = lastHitBy;
+    }
+
+    // ALL TRAIL STUFF (It's a fucking mess)
+
+    public boolean hasFireTrailOn() {
+        return this.fireTrailCosmeticOn;
+    }
+
+    public void setHasFireTrailOn(boolean fireTrailCosmeticOn) {
+        this.fireTrailCosmeticOn = fireTrailCosmeticOn;
+    }
+
+    public boolean hasWaterTrailOn() {
+        return this.waterTrailCosmeticOn;
+    }
+
+    public void setHasWaterTrailOn(boolean waterTrailCosmeticOn) {
+        this.waterTrailCosmeticOn = waterTrailCosmeticOn;
+    }
+
+    public boolean hasLavaTrailOn() {
+        return this.lavaTrailCosmeticOn;
+    }
+
+    public void setHasLavaTrailOn(boolean lavaTrailCosmeticOn) {
+        this.lavaTrailCosmeticOn = lavaTrailCosmeticOn;
+    }
+
+    public boolean hasNoteTrailOn() {
+        return this.noteTrailCosmeticOn;
+    }
+
+    public void setHasNoteTrailOn(boolean noteTrailCosmeticOn) {
+        this.noteTrailCosmeticOn = noteTrailCosmeticOn;
+    }
+
+    public boolean hasHeartTrailOn() {
+        return this.heartTrailCosmeticOn;
+    }
+
+    public void setHasHeartTrailOn(boolean heartTrailCosmeticOn) {
+        this.heartTrailCosmeticOn = heartTrailCosmeticOn;
+    }
+
+    public boolean hasSnowTrailOn() {
+        return this.snowTrailCosmeticOn;
+    }
+
+    public void setHasSnowTrailOn(boolean snowTrailCosmeticOn) {
+        this.snowTrailCosmeticOn = snowTrailCosmeticOn;
+    }
+
+    public boolean hasEmeraldTrailOn() {
+        return this.emeraldTrailCosmeticOn;
+    }
+
+    public void setHasEmeraldTrailOn(boolean emeraldTrailCosmeticOn) {
+        this.emeraldTrailCosmeticOn = emeraldTrailCosmeticOn;
+    }
+
+    public boolean hasAngryTrailOn() {
+        return this.angryTrailCosmeticOn;
+    }
+
+    public void setHasAngryTrailOn(boolean angryTrailCosmeticOn) {
+        this.angryTrailCosmeticOn = angryTrailCosmeticOn;
+    }
+
+    public boolean hasEnchantTrailOn() {
+        return this.enchantTrailCosmeticOn;
+    }
+
+    public void setHasEnchantTrailOn(boolean enchantTrailCosmeticOn) {
+        this.enchantTrailCosmeticOn = enchantTrailCosmeticOn;
+    }
+
+    public boolean hasPurpleTrailOn() {
+        return this.purpleTrailCosmeticOn;
+    }
+
+    public void setHasPurpleTrailOn(boolean purpleTrailCosmeticOn) {
+        this.purpleTrailCosmeticOn = purpleTrailCosmeticOn;
+    }
+
+    public boolean hasBloodTrailOn() {
+        return this.bloodTrailCosmeticOn;
+    }
+
+    public void setBloodTrailCosmeticOn(boolean bloodTrailCosmeticOn) {
+        this.bloodTrailCosmeticOn = bloodTrailCosmeticOn;
+    }
+
+    public boolean hasTrailOn() {
+        return this.trailOn;
+    }
+
+    public void setHasTrailOn(boolean trailOn) {
+        this.trailOn = trailOn;
     }
 }

@@ -2,6 +2,7 @@ package me.jaskowicz.oneinthechamber.Listeners;
 
 import com.google.common.io.ByteArrayDataOutput;
 import com.google.common.io.ByteStreams;
+import me.jaskowicz.oneinthechamber.Inventories.CosmeticInventory;
 import me.jaskowicz.oneinthechamber.Inventories.StatsInventory;
 import me.jaskowicz.oneinthechamber.OneInTheChamber;
 import me.jaskowicz.oneinthechamber.Settings.GameSettings;
@@ -139,7 +140,7 @@ public class OnPlayerInteract implements Listener {
                     player.playSound(player.getLocation(), Sound.ENTITY_CHICKEN_EGG, 5.0F, 1F);
 
                     if(!user.getGameIn().hasStarted()) {
-                        player.sendMessage(OneInTheChamber.prefix + ChatColor.YELLOW + "Coming soon...");
+                        player.openInventory(CosmeticInventory.getInventory());
                     } else {
                         player.sendMessage(OneInTheChamber.prefix + ChatColor.WHITE + "This is not allowed!");
                     }
