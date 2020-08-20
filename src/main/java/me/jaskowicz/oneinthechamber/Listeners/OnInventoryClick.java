@@ -157,18 +157,18 @@ public class OnInventoryClick implements Listener {
                         player.playSound(player.getLocation(), Sound.ENTITY_VILLAGER_HURT, 5.0F, 0.4F);
                         player.sendMessage(OneInTheChamber.prefix + ChatColor.RED + "You lack the permission to use this particle.");
                     }
-                } else if (clicked.getItemMeta().getDisplayName().contains("Emerald Trail")) {
-                    if (player.hasPermission("oneinthechamber.emeraldtrail")) {
-                        if (!user.hasTrailOn() && !user.hasEmeraldTrailOn() || user.hasTrailOn() && user.hasEmeraldTrailOn()) {
+                } else if (clicked.getItemMeta().getDisplayName().contains("Bloood Trail")) {
+                    if (player.hasPermission("oneinthechamber.bloodtrail")) {
+                        if (!user.hasTrailOn() && !user.hasBloodTrailOn() || user.hasTrailOn() && user.hasBloodTrailOn()) {
                             player.playSound(player.getLocation(), Sound.ENTITY_CHICKEN_EGG, 5.0F, 1F);
-                            if (!user.hasEmeraldTrailOn()) {
-                                user.setHasEmeraldTrailOn(true);
+                            if (!user.hasBloodTrailOn()) {
+                                user.setBloodTrailCosmeticOn(true);
                                 user.setHasTrailOn(true);
-                                player.sendMessage(OneInTheChamber.prefix + ChatColor.GRAY + "Emerald trail: " + ChatColor.GREEN + "Enabled");
+                                player.sendMessage(OneInTheChamber.prefix + ChatColor.GRAY + "Blood trail: " + ChatColor.GREEN + "Enabled");
                             } else {
-                                user.setHasEmeraldTrailOn(false);
+                                user.setBloodTrailCosmeticOn(false);
                                 user.setHasTrailOn(false);
-                                player.sendMessage(OneInTheChamber.prefix + ChatColor.GRAY + "Emerald trail: " + ChatColor.RED + "Disabled");
+                                player.sendMessage(OneInTheChamber.prefix + ChatColor.GRAY + "Blood trail: " + ChatColor.RED + "Disabled");
                             }
                         } else {
                             player.sendMessage(OneInTheChamber.prefix + ChatColor.RED + "You already have a trail on!");
@@ -182,6 +182,7 @@ public class OnInventoryClick implements Listener {
                     if (user.hasTrailOn()) {
                         user.setHasAngryTrailOn(false);
                         user.setHasEmeraldTrailOn(false);
+                        user.setBloodTrailCosmeticOn(false);
                         user.setHasEnchantTrailOn(false);
                         user.setHasFireTrailOn(false);
                         user.setHasHeartTrailOn(false);

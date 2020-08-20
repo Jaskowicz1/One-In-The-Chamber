@@ -3,6 +3,7 @@ package me.jaskowicz.oneinthechamber.Tasks;
 import me.jaskowicz.oneinthechamber.OneInTheChamber;
 import me.jaskowicz.oneinthechamber.Utils.Game;
 import me.jaskowicz.oneinthechamber.Utils.User;
+import org.bukkit.Material;
 import org.bukkit.Particle;
 import org.bukkit.Sound;
 import org.bukkit.entity.Arrow;
@@ -42,7 +43,9 @@ public class ArrowTrailTask extends BukkitRunnable {
             Objects.requireNonNull(arrow.getLocation().getWorld()).spawnParticle(Particle.NOTE, arrow.getLocation(), 5, 0, 0, 0, 0.07);
         } else if (user.hasSnowTrailOn()) {
             Objects.requireNonNull(arrow.getLocation().getWorld()).spawnParticle(Particle.SNOW_SHOVEL, arrow.getLocation(), 5, 0, 0, 0, 0.07);
-        } else if (user.hasEmeraldTrailOn()) {
+        } else if (user.hasBloodTrailOn()) {
+            Objects.requireNonNull(arrow.getLocation().getWorld()).spawnParticle(Particle.BLOCK_CRACK, arrow.getLocation(), 5, 0, 0, 0, 0.07, Material.REDSTONE_BLOCK.getData());
+        } else {
             Objects.requireNonNull(arrow.getLocation().getWorld()).spawnParticle(Particle.VILLAGER_HAPPY, arrow.getLocation(), 5, 0, 0, 0, 0.07);
         }
 

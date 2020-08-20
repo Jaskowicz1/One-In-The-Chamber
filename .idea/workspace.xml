@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7feb3ae4-3fff-4445-832d-4089b34a8592" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Inventories/CosmeticInventory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Listeners/OnBowShoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Listeners/OnBowShoot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Inventories/CosmeticInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Inventories/CosmeticInventory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Listeners/OnInventoryClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Listeners/OnInventoryClick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Listeners/OnPlayerInteract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Listeners/OnPlayerInteract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Listeners/OnPlayerMove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Listeners/OnPlayerMove.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Listeners/PlayerConnections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Listeners/PlayerConnections.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Tasks/ArrowTrailTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Tasks/ArrowTrailTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Utils/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Utils/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/oneinthechamber-1.0-SNAPSHOT-shaded.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/oneinthechamber-1.0-SNAPSHOT-shaded.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/oneinthechamber-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/oneinthechamber-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/original-oneinthechamber-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-oneinthechamber-1.0-SNAPSHOT.jar" afterDir="false" />
@@ -52,8 +46,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="me.jaskowicz.oneinthechamber.Inventories" />
       <recent name="me.jaskowicz.oneinthechamber.UtilsExtra" />
+      <recent name="me.jaskowicz.oneinthechamber.Inventories" />
       <recent name="me.jaskowicz.oneinthechamber.Tasks" />
       <recent name="me.jaskowicz.oneinthechamber.Settings" />
     </key>

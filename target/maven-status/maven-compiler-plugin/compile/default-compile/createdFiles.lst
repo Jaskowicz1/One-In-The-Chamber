@@ -26,6 +26,7 @@ me\jaskowicz\oneinthechamber\Inventories\StatsInventory.class
 me\jaskowicz\oneinthechamber\Tasks\ArrowTrailTask.class
 me\jaskowicz\oneinthechamber\Utils\Game.class
 me\jaskowicz\oneinthechamber\Tasks\StartingGameTask.class
+me\jaskowicz\oneinthechamber\UtilsExtra\SkullCreator.class
 me\jaskowicz\oneinthechamber\Listeners\OnPlayerMove.class
 me\jaskowicz\oneinthechamber\Tasks\GameTask.class
 me\jaskowicz\oneinthechamber\UtilsExtra\DatabaseUtils.class
