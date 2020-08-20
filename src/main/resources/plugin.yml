@@ -1,0 +1,11 @@
+name: OneInTheChamber
+version: ${project.version}
+main: me.jaskowicz.oneinthechamber.OneInTheChamber
+api-version: 1.13
+authors: [Jaskowicz]
+description: A sickkkkkkk minigame.
+
+commands:
+  oneinthechamber:
+    description: The main command.
+    aliases: [oitc]

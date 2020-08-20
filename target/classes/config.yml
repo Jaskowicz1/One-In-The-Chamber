@@ -1,0 +1,5 @@
+database:
+  host: localhost
+  database: db
+  username: root
+  password: 'secure'
