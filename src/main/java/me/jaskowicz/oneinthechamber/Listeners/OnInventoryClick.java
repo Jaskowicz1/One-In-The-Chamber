@@ -35,7 +35,7 @@ public class OnInventoryClick implements Listener {
         if(user.getGameIn() != null) {
             if(invname.contains("Your Statistics")) {
                 event.setCancelled(true);
-            } else if (invname.contains("Particles")) {
+            } else if (invname.contains("Arrow Trails")) {
                 event.setCancelled(true);
                 if (clicked.getItemMeta().getDisplayName().contains("Fire Trail")) {
                     if (player.hasPermission("oneinthechamber.firetrail")) {
@@ -157,7 +157,7 @@ public class OnInventoryClick implements Listener {
                         player.playSound(player.getLocation(), Sound.ENTITY_VILLAGER_HURT, 5.0F, 0.4F);
                         player.sendMessage(OneInTheChamber.prefix + ChatColor.RED + "You lack the permission to use this particle.");
                     }
-                } else if (clicked.getItemMeta().getDisplayName().contains("Bloood Trail")) {
+                } else if (clicked.getItemMeta().getDisplayName().contains("Blood Trail")) {
                     if (player.hasPermission("oneinthechamber.bloodtrail")) {
                         if (!user.hasTrailOn() && !user.hasBloodTrailOn() || user.hasTrailOn() && user.hasBloodTrailOn()) {
                             player.playSound(player.getLocation(), Sound.ENTITY_CHICKEN_EGG, 5.0F, 1F);
@@ -177,7 +177,7 @@ public class OnInventoryClick implements Listener {
                         player.playSound(player.getLocation(), Sound.ENTITY_VILLAGER_HURT, 5.0F, 0.4F);
                         player.sendMessage(OneInTheChamber.prefix + ChatColor.RED + "You lack the permission to use this particle.");
                     }
-                } else if (clicked.getItemMeta().getDisplayName().contains("Clear particles")) {
+                } else if (clicked.getItemMeta().getDisplayName().contains("Clear arrow trails")) {
                     event.setCancelled(true);
                     if (user.hasTrailOn()) {
                         user.setHasAngryTrailOn(false);
@@ -192,10 +192,10 @@ public class OnInventoryClick implements Listener {
                         user.setHasWaterTrailOn(false);
                         user.setHasPurpleTrailOn(false);
                         user.setHasTrailOn(false);
-                        player.sendMessage(OneInTheChamber.prefix + ChatColor.RED + "Your current particle effect has been cleared.");
+                        player.sendMessage(OneInTheChamber.prefix + ChatColor.RED + "Your current arrow trail has been cleared.");
                         player.playSound(player.getLocation(), Sound.BLOCK_FIRE_EXTINGUISH, 5.0F, 0.4F);
                     } else if (!user.hasTrailOn()) {
-                        player.sendMessage(OneInTheChamber.prefix + ChatColor.RED + "There are no particle effects to be cleared.");
+                        player.sendMessage(OneInTheChamber.prefix + ChatColor.RED + "There are no arrow trails to be cleared.");
                     }
                 } else if (clicked.getItemMeta().getDisplayName().contains("Exit")) {
                     event.setCancelled(true);
