@@ -29,7 +29,7 @@ public class DatabaseUtils {
 
             FileConfiguration configData = plugin.getConfig();
 
-            OneInTheChamber.connection = DriverManager.getConnection("jdbc:mysql://" + configData.getString("database.host") + "/" + configData.getString("database.database") + "?autoReconnect=true&useUnicode=yes&useSSL=false", "" + configData.getString("database.username"), "" + configData.getString("database.password"));
+            OneInTheChamber.connection = DriverManager.getConnection("jdbc:mysql://" + configData.getString("database.host") + "/" + configData.getString("database.database") + "?autoReconnect=true&tcpKeepAlive=true&useUnicode=yes&useSSL=false", "" + configData.getString("database.username"), "" + configData.getString("database.password"));
             Statement cre = OneInTheChamber.connection.createStatement();
             cre.executeUpdate("CREATE TABLE IF NOT EXISTS `STATS`(`UserID` int NOT NULL AUTO_INCREMENT, `playerName` varchar (256), `playerUUID` varchar(256), `Kills` int, `Deaths` int, `Wins` int, `Loses` int, `Draws` int, PRIMARY KEY (`UserID`));");
             cre.close();

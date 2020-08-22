@@ -44,7 +44,7 @@ public class ArrowTrailTask extends BukkitRunnable {
         } else if (user.hasSnowTrailOn()) {
             Objects.requireNonNull(arrow.getLocation().getWorld()).spawnParticle(Particle.SNOW_SHOVEL, arrow.getLocation(), 5, 0, 0, 0, 0.07);
         } else if (user.hasBloodTrailOn()) {
-            Objects.requireNonNull(arrow.getLocation().getWorld()).spawnParticle(Particle.BLOCK_CRACK, arrow.getLocation(), 5, 0, 0, 0, 0.07, Material.REDSTONE_BLOCK.getData());
+            Objects.requireNonNull(arrow.getLocation().getWorld()).spawnParticle(Particle.BLOCK_CRACK, arrow.getLocation(), 25, 0, 0, 0, 0.07, Material.REDSTONE_BLOCK.createBlockData());
         } else {
             Objects.requireNonNull(arrow.getLocation().getWorld()).spawnParticle(Particle.VILLAGER_HAPPY, arrow.getLocation(), 5, 0, 0, 0, 0.07);
         }
