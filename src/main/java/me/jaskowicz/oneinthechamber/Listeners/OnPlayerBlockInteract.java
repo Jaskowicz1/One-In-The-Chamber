@@ -44,30 +44,6 @@ public class OnPlayerBlockInteract implements Listener {
                 if(user.getGameIn() != null) {
                     event.setCancelled(true);
                 }
-            } else if(event.getClickedBlock() != null && event.getClickedBlock().getType() == Material.ACACIA_TRAPDOOR) {
-                if(user.getGameIn() != null) {
-                    event.setCancelled(true);
-                }
-            } else if(event.getClickedBlock() != null && event.getClickedBlock().getType() == Material.BIRCH_TRAPDOOR) {
-                if(user.getGameIn() != null) {
-                    event.setCancelled(true);
-                }
-            } else if(event.getClickedBlock() != null && event.getClickedBlock().getType() == Material.DARK_OAK_TRAPDOOR) {
-                if(user.getGameIn() != null) {
-                    event.setCancelled(true);
-                }
-            } else if(event.getClickedBlock() != null && event.getClickedBlock().getType() == Material.JUNGLE_TRAPDOOR) {
-                if(user.getGameIn() != null) {
-                    event.setCancelled(true);
-                }
-            } else if(event.getClickedBlock() != null && event.getClickedBlock().getType() == Material.OAK_TRAPDOOR) {
-                if(user.getGameIn() != null) {
-                    event.setCancelled(true);
-                }
-            } else if(event.getClickedBlock() != null && event.getClickedBlock().getType() == Material.SPRUCE_TRAPDOOR) {
-                if(user.getGameIn() != null) {
-                    event.setCancelled(true);
-                }
             } else if(event.getClickedBlock() != null && event.getClickedBlock().getType() == Material.BARREL) {
                 if(user.getGameIn() != null) {
                     event.setCancelled(true);
@@ -81,34 +57,6 @@ public class OnPlayerBlockInteract implements Listener {
                     event.setCancelled(true);
                 }
             } else if(event.getClickedBlock() != null && event.getClickedBlock().getType() == Material.CAULDRON) {
-                if(user.getGameIn() != null) {
-                    event.setCancelled(true);
-                }
-            } else if(event.getClickedBlock() != null && event.getClickedBlock().getType() == Material.DARK_OAK_DOOR) {
-                if(user.getGameIn() != null) {
-                    event.setCancelled(true);
-                }
-            } else if(event.getClickedBlock() != null && event.getClickedBlock().getType() == Material.ACACIA_DOOR) {
-                if(user.getGameIn() != null) {
-                    event.setCancelled(true);
-                }
-            } else if(event.getClickedBlock() != null && event.getClickedBlock().getType() == Material.BIRCH_DOOR) {
-                if(user.getGameIn() != null) {
-                    event.setCancelled(true);
-                }
-            } else if(event.getClickedBlock() != null && event.getClickedBlock().getType() == Material.JUNGLE_DOOR) {
-                if(user.getGameIn() != null) {
-                    event.setCancelled(true);
-                }
-            } else if(event.getClickedBlock() != null && event.getClickedBlock().getType() == Material.OAK_DOOR) {
-                if(user.getGameIn() != null) {
-                    event.setCancelled(true);
-                }
-            } else if(event.getClickedBlock() != null && event.getClickedBlock().getType() == Material.SPRUCE_DOOR) {
-                if(user.getGameIn() != null) {
-                    event.setCancelled(true);
-                }
-            } else if(event.getClickedBlock() != null && event.getClickedBlock().getType() == Material.CRAFTING_TABLE) {
                 if(user.getGameIn() != null) {
                     event.setCancelled(true);
                 }

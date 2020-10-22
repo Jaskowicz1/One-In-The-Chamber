@@ -21,6 +21,7 @@ me\jaskowicz\oneinthechamber\Listeners\OnProjectileHit.class
 me\jaskowicz\oneinthechamber\Commands\MainCommand.class
 me\jaskowicz\oneinthechamber\Listeners\OnPlayerBlockInteract.class
 me\jaskowicz\oneinthechamber\Settings\GameSettings.class
+me\jaskowicz\oneinthechamber\Tasks\DatabaseAliveTask.class
 me\jaskowicz\oneinthechamber\Listeners\OnGameModeChange.class
 me\jaskowicz\oneinthechamber\Inventories\StatsInventory.class
 me\jaskowicz\oneinthechamber\Tasks\ArrowTrailTask.class

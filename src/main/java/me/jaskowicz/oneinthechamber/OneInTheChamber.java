@@ -2,6 +2,7 @@ package me.jaskowicz.oneinthechamber;
 
 import me.jaskowicz.oneinthechamber.Commands.MainCommand;
 import me.jaskowicz.oneinthechamber.Listeners.*;
+import me.jaskowicz.oneinthechamber.Tasks.DatabaseAliveTask;
 import me.jaskowicz.oneinthechamber.Utils.Arena;
 import me.jaskowicz.oneinthechamber.Utils.Game;
 import me.jaskowicz.oneinthechamber.Utils.User;
@@ -123,6 +124,10 @@ public final class OneInTheChamber extends JavaPlugin {
         this.getCommand("oneinthechamber").setExecutor(new MainCommand());
 
         this.getServer().getMessenger().registerOutgoingPluginChannel(this, "BungeeCord");
+
+        DatabaseAliveTask databaseAliveTask = new DatabaseAliveTask();
+
+        databaseAliveTask.runTaskTimer(this, 0, 20 * 15);
 
         getLogger().info("OneInTheChamber has been enabled!");
         getLogger().info("Made & Developed by: Archie Jaskowicz.");

@@ -35,59 +35,6 @@ public class GameTask extends BukkitRunnable {
         *  Redo this entire class.
      */
 
-    /*
-    // Stop any respawn things.
-                for(BukkitTask bukkitTask1 : game.respawnTasks.keySet()) {
-                    bukkitTask1.cancel();
-                }
-
-                game.respawnTasks.clear();
-
-
-                game.setFinished(true);
-                game.setStarted(false);
-
-                for (User u : game.getUsersPlaying().values()) {
-                    u.getPlayer().sendTitle("" + ChatColor.GRAY + ChatColor.BOLD + "Draw!", ChatColor.YELLOW + "Maybe don't be too kind to each other..", 0, 100, 10);
-                    u.getPlayer().sendMessage(OneInTheChamber.prefix + ChatColor.WHITE + "The game has ended! Nobody won as the time ran out!");
-                }
-
-                Bukkit.getScheduler().runTaskLater(plugin, () -> {
-
-                    for (User u : game.getUsersPlaying().values()) {
-                        u.getPlayer().sendMessage(ChatColor.GREEN + "Thank you for playing One In The Chamber!");
-
-                        u.setGameIn(null);
-
-                        if (u.getPlayer().getGameMode() == GameMode.SPECTATOR) {
-                            u.getPlayer().setSpectatorTarget(null);
-                        }
-
-                        u.getPlayer().teleport(u.getLocationBeforeJoin());
-
-                        if(u.getLastInventory() != null) {
-                            u.getPlayer().getInventory().setContents(u.getLastInventory().getContents());
-                        }
-
-                        u.getPlayer().setGameMode(u.getLastGameMode());
-                        u.getPlayer().updateInventory();
-
-                        u.getCurrentScoreboardAPI().clearLines();
-
-                        u.setLastInventory(null);
-                        u.setLastGameMode(null);
-                    }
-
-                    game.getArenaInUse().setUsedBy(null);
-
-                    OneInTheChamber.ARENASNOTINUSE.put(game.getArenaInUse().getArenaName(), game.getArenaInUse());
-                    OneInTheChamber.ARENASINUSE.remove(game.getArenaInUse().getArenaName());
-
-                    this.cancel();
-                    OneInTheChamber.GAMES.remove(game.getArenaInUse());
-                }, 100);
-     */
-
     public void run() {
 
         if(game.hasStarted()) {

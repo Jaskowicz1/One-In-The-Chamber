@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="7feb3ae4-3fff-4445-832d-4089b34a8592" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Tasks/ArrowTrailTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Tasks/ArrowTrailTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/UtilsExtra/DatabaseUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/UtilsExtra/DatabaseUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/me/jaskowicz/oneinthechamber/Tasks/ArrowTrailTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/jaskowicz/oneinthechamber/Tasks/ArrowTrailTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Listeners/OnPlayerBlockInteract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Listeners/OnPlayerBlockInteract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/OneInTheChamber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/OneInTheChamber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Tasks/GameTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jaskowicz/oneinthechamber/Tasks/GameTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/jaskowicz/oneinthechamber/Listeners/OnPlayerBlockInteract.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/jaskowicz/oneinthechamber/Listeners/OnPlayerBlockInteract.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/jaskowicz/oneinthechamber/Tasks/GameTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/jaskowicz/oneinthechamber/Tasks/GameTask.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/oneinthechamber-1.0-SNAPSHOT-shaded.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/oneinthechamber-1.0-SNAPSHOT-shaded.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/oneinthechamber-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/oneinthechamber-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/original-oneinthechamber-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-oneinthechamber-1.0-SNAPSHOT.jar" afterDir="false" />
